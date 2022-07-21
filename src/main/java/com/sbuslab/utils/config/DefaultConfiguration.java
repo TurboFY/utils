@@ -221,12 +221,6 @@ public abstract class DefaultConfiguration implements ApplicationContextAware {
                     authProvider,
                     actorSystem,
                     mapper
-                ),
-
-                "kafka", new KafkaTransport(
-                    config.getConfig("sbus.transports.kafka"),
-                    actorSystem,
-                    mapper
                 )
             )
         );
