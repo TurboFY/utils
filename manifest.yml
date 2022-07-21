@@ -1,10 +1,9 @@
 info:
-  name: sbuslab-utils
-  version: "1.4"
+  name: sbuslab-utils-hf
+  version: "1.0"
 
 include:
   - file: /etc/serve/include.d/library.yml
 
 build:
   - gradle: publish
-  - sonarqube: {}
